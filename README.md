@@ -21,4 +21,8 @@ Create a webpage and use ajax calls to display the data from the webserver on yo
 
 Anaconda 3, Python 3.7 and Spyder 3.3.6
 
+### API Keys
+
+API keys in file are not current and have been regenerated for security reasons
+
 
