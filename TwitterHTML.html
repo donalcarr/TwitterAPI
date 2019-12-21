@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <!-- use jquery from javascript library from microsoft -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>
+        Twitter API
+    </title>
+</head>
+
+<body>
+    <!--create get followers button on webpage-->
+    <button onclick="readJSON()">Get Followers</button>
+    <div id="output"></div>
+</body>
+<script>
+    <!--create readjson function for returning followers to the webpage-->
+    function readJSON() {
+        $.ajax({
+            "url": "url": "http://127.0.0.1:5000/followers2",
+            "method": "GET",
+            "data": "",
+            "dataType": "JSON",
+            "success": function (results) {
+                console.log(results);
+            },
+            "error": function (xhr, status, error) {
+                console.log("error: " + status + " msg:" + error);
+            }
+        });
+    }
+</script>
+
+</html>
+
